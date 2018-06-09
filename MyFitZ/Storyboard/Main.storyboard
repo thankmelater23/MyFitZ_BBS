@@ -272,7 +272,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="PAP-bD-IKO">
-                                        <rect key="frame" x="375" y="686" width="30" height="20"/>
+                                        <rect key="frame" x="374" y="686" width="30" height="20"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64598599140000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="axl-GR-nx2"/>
@@ -513,7 +513,6 @@
                                     <constraint firstItem="2cC-f8-OkI" firstAttribute="trailing" secondItem="7vb-MC-dE2" secondAttribute="trailing" id="nv2-sR-taR"/>
                                     <constraint firstItem="b0o-J7-YWd" firstAttribute="baseline" secondItem="3dK-nr-NGP" secondAttribute="baseline" id="ow3-5D-Iz6"/>
                                     <constraint firstItem="jw6-6o-D43" firstAttribute="baseline" secondItem="Dtm-89-CSv" secondAttribute="baseline" id="pjI-Th-vd2"/>
-                                    <constraint firstItem="UIl-B3-obl" firstAttribute="trailing" secondItem="YGE-UP-xKm" secondAttribute="trailing" id="pmx-nM-gsp"/>
                                     <constraint firstItem="qx2-n4-ruP" firstAttribute="firstBaseline" secondItem="PAP-bD-IKO" secondAttribute="firstBaseline" id="qdE-Uz-pw7"/>
                                     <constraint firstItem="amH-Uk-Roc" firstAttribute="leading" secondItem="jw6-6o-D43" secondAttribute="trailing" id="qia-ia-h5a"/>
                                     <constraint firstItem="oKB-jF-SF9" firstAttribute="top" secondItem="lfO-Qi-3Hr" secondAttribute="bottom" constant="16" id="qsS-UR-g1H"/>
