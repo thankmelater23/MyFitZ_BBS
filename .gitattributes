@@ -1,0 +1,8 @@
+#*.pbxproj binary merge=union
+*.pbxproj merge=union
+Info.plist merge=union
+
+#Alternatives
+#*.pbxproj -crlf -merge 
+#*.pbxproj merge=union
+#Im not sure this is working

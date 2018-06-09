@@ -141,6 +141,53 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CRToast/CRToast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HeapInspector/HeapInspector.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/REFormattedNumberField/REFormattedNumberField.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RETableViewManager/RETableViewManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/REValidation/REValidation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Siren/Siren.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSMessages/TSMessages.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iRate/iRate.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CRToast/CRToast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HeapInspector/HeapInspector.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/REFormattedNumberField/REFormattedNumberField.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RETableViewManager/RETableViewManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/REValidation/REValidation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Siren/Siren.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSMessages/TSMessages.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iRate/iRate.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

@@ -1,3 +1,212 @@
-PODFILE CHECKSUM: bb5b1adbb7bb478fecbc7151c35500a8c65f8b4f
+PODS:
+  - Appsee (2.4.1)
+  - AsyncSwift (2.0.4)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
+  - CRToast (0.0.9)
+  - DZNEmptyDataSet (1.8.1)
+  - Fabric (1.7.7)
+  - Firebase/Auth (5.2.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.1)
+  - Firebase/Core (5.2.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.2.0):
+    - FirebaseCore (= 5.0.3)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (5.0.3):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (3.1.0):
+    - FirebaseCore (~> 5.0)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GTMSessionFetcher/Core (1.1.15)
+  - HeapInspector (1.0.1):
+    - HeapInspector/no-arc (= 1.0.1)
+  - HeapInspector/no-arc (1.0.1)
+  - HexColors (2.2.1)
+  - iRate (1.12.2)
+  - leveldb-library (1.20)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - OneSignal (2.8.5)
+  - Optimizely-iOS-SDK (1.7.0)
+  - REFormattedNumberField (1.1.6)
+  - RETableViewManager (1.7):
+    - REFormattedNumberField (~> 1.1.5)
+    - REValidation (~> 0.1.4)
+  - REValidation (0.1.4)
+  - Siren (3.4.1)
+  - SlackTextViewController (1.9.6)
+  - SVProgressHUD (2.2.5)
+  - SwiftLint (0.25.1)
+  - SwiftyBeaver (1.6.0)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+
+DEPENDENCIES:
+  - Appsee
+  - AsyncSwift
+  - ChameleonFramework
+  - Crashlytics
+  - CRToast
+  - DZNEmptyDataSet
+  - Fabric
+  - Firebase/Auth
+  - Firebase/Core
+  - FirebaseDatabase
+  - FontAwesomeKit
+  - HeapInspector
+  - iRate
+  - MRProgress
+  - OneSignal (< 3.0, >= 2.5.2)
+  - Optimizely-iOS-SDK
+  - RETableViewManager
+  - Siren
+  - SlackTextViewController
+  - SVProgressHUD
+  - SwiftLint
+  - SwiftyBeaver
+  - TSMessages
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Appsee
+    - AsyncSwift
+    - ChameleonFramework
+    - Crashlytics
+    - CRToast
+    - DZNEmptyDataSet
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - FontAwesomeKit
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - HeapInspector
+    - HexColors
+    - iRate
+    - leveldb-library
+    - MRProgress
+    - nanopb
+    - OneSignal
+    - Optimizely-iOS-SDK
+    - REFormattedNumberField
+    - RETableViewManager
+    - REValidation
+    - Siren
+    - SlackTextViewController
+    - SVProgressHUD
+    - SwiftLint
+    - SwiftyBeaver
+    - TSMessages
+
+SPEC CHECKSUMS:
+  Appsee: ab8b0317b0a5217d08637f61dbddaba2c9748f2a
+  AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  Firebase: 25ed0412036d7d008568d1fb4d2e9d81ea8a0a2c
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseAuth: 463b8ce33bd5d05f706dcd4615499e3212b4132b
+  FirebaseCore: a3c87242451633fff8490183898075ce77d168d2
+  FirebaseDatabase: 482bad9c2abd422bb2321194fb8c937e67426a89
+  FirebaseInstanceID: 05d779cbb97bd5bd5c51a38a903fc9cfe1b2454a
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  HeapInspector: 121979cf97b186616ddfcd5ec0f61db631556c7b
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  iRate: 4fc69958788624545e5d050c8ffd20884013c3f1
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  OneSignal: 42dae269c7eca517aee34963820e1eb922390031
+  Optimizely-iOS-SDK: e406016e617f84e823227c52131341dc20721319
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
+  RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  Siren: 94e13d40b48d8c0ddac053140d607c36bb487767
+  SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+
+PODFILE CHECKSUM: 2863f91afe45a0bfe6ab35a2a8e8877e12b7be1a
 
 COCOAPODS: 1.5.3

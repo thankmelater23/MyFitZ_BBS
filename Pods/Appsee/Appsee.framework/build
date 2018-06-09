@@ -1,0 +1,162 @@
+#!/bin/sh
+
+# *** OFFLINE CONFIGURATION
+
+API_URL="https://api.appsee.com/offline"
+PLATFORM_ID="0"
+CONFIG_FILE_NAME="AppseeOffline.config"
+CONFIG_FILE_PATH="${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/${CONFIG_FILE_NAME}"
+
+function getBundleIdentifier {
+
+    cfBundleIdentifier=${PRODUCT_BUNDLE_IDENTIFIER}
+
+    if [ ${#cfBundleIdentifier} -lt 1 ]; then
+
+        SOURCE="rfc1034identifier"
+        cfBundleIdentifier=$(/usr/libexec/PlistBuddy -c "Print CFBundleIdentifier" "${INFOPLIST_FILE}" 2>/dev/null)
+
+        while echo "$cfBundleIdentifier" | grep -q '${'; do
+        	cfBundleIdentifier=$(echo `eval echo $cfBundleIdentifier`)
+        done
+
+   fi
+
+   echo `eval echo $cfBundleIdentifier`
+}
+
+echo "Appsee - Fetching offline settings..."
+
+# Skip debug build
+if [ "$CONFIGURATION" != "Release" ]; then
+    echo "Appsee - Ignoring Debug build"
+    exit 0
+fi
+
+APIKEY=$(/usr/libexec/PlistBuddy -c "Print com.appsee.ApiKey" "${INFOPLIST_FILE}" 2>/dev/null)
+
+# Check given APIKey
+if [ ! "${APIKEY}" ]; then
+
+    # Look for Appsee's API in the first Fabric kit
+    KITNAME=$(/usr/libexec/PlistBuddy -c "print Fabric:Kits:0:KitName" "${INFOPLIST_FILE}" 2>/dev/null)
+    if [ ! -z "${KITNAME}" ]; then
+        if [ "${KITNAME}" == "Appsee" ]; then
+            APIKEY=$(/usr/libexec/PlistBuddy -c "print Fabric:Kits:0:KitInfo:apikey" "${INFOPLIST_FILE}" 2>/dev/null)
+        else
+            echo "Appsee - Couldn't obtain the API key from the first Fabric kit."
+            echo "Appsee - Please put Appsee at the top of the Fabric kits array (currently the first kit is '${KITNAME}')."
+            exit 1
+        fi
+    fi
+
+    if [ ! "${APIKEY}" ]; then
+        echo "Appsee - Please provide your API Key in your app's Info.plist file."
+        echo "Appsee - Couldn't find an API key under the com.appsee.ApiKey entry in the info.plist file."
+        exit 1
+    fi
+fi
+
+# Obtain the current directory
+APPSEE_FRAMEWORK_PATH="${BASH_SOURCE%/*}"
+
+if [ ! -d "$APPSEE_FRAMEWORK_PATH" ]; then
+  echo "Appsee - Couldn't find Appsee.framework in the current directory; Please make sure to add the framework to your project."
+  exit 1
+fi
+
+buildStr=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${INFOPLIST_FILE}" 2>/dev/null)
+versionStr=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${INFOPLIST_FILE}" 2>/dev/null)
+bundleId=$(eval getBundleIdentifier)
+sdkVer=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${APPSEE_FRAMEWORK_PATH}/Info.plist" 2>/dev/null)
+
+# Build URL
+url="${API_URL}/configuration?APIKey=${APIKEY}&Platform=${PLATFORM_ID}"
+
+# Build array of url-encode arguments
+urlencodeArgs=()
+urlencodeArgs+=( $(eval echo '"--data-urlencode AppVersion=${versionStr}"') )
+urlencodeArgs+=( $(eval echo '"--data-urlencode SDKVersion=${sdkVer}"') )
+urlencodeArgs+=( $(eval echo '"--data-urlencode BundleId=${bundleId}"') )
+if [ "${buildStr}" ]; then urlencodeArgs+=( $(eval echo '"--data-urlencode AppBuild=${buildStr}"') ); fi
+
+# Download fallback file
+HTTPCODE=$(curl -G "${url}" ${urlencodeArgs[@]} --write-out %{http_code} --silent --output "${CONFIG_FILE_PATH}")
+
+if [ $HTTPCODE -eq 204 ]; then
+	# No need for the file
+	rm "${CONFIG_FILE_PATH}"
+elif [ $HTTPCODE -ge 400 ]; then
+	echo "Appsee - Download failed with status $HTTPCODE. Please contact support@appsee.com for assistance"
+  exit 1
+fi
+
+# *** Finished with downloading/deleting of the offline settings file
+# *** Commence verifying of the offline settings file
+
+# Build URL
+url="${API_URL}/verify?APIKey=${APIKEY}"
+
+JSON="{\"Platform\": ${PLATFORM_ID}, \"BundleId\": \"${bundleId}\", \"AppVersion\": \"${versionStr}\", \"SDKVersion\": \"${sdkVer}\", "
+if [ "${buildStr}" ]; then JSON+="\"AppBuild\": \"${buildStr}\", "; fi
+if [ -f ${CONFIG_FILE_PATH} ]; then 
+  CONTENTS=$(eval cat ${CONFIG_FILE_PATH})
+  JSON+="\"Configuration\": \"${CONTENTS}\"}"
+else
+  JSON+="\"Configuration\": \"\"}";
+fi
+
+# Call the verification endpoint
+HTTPCODE=$(curl "${url}" -d "${JSON}" -H "Content-Type: application/json" --write-out %{http_code} --silent)
+
+if [ $HTTPCODE -ge 400 ]; then
+  echo "Appsee - Verification failed with status $HTTPCODE. Please contact support@appsee.com for assistance"
+  exit 1
+fi
+
+# *** DSYM UPLOAD
+
+echo "Appsee - Starting debug symbols upload..."
+API_URL="https://api.appsee.com/crashes/upload-symbols"
+
+# Skip simulator build
+if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
+    echo "Appsee - Ignoring Simulator build"
+    exit 0
+fi
+
+DSYM_PATH=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
+ZIP_DIR="/tmp/Appsee"
+ZIP_PATH="${ZIP_DIR}/$DWARF_DSYM_FILE_NAME.zip"
+
+# Check if zip directory available
+if [ ! -d "$ZIP_DIR" ]; then
+    mkdir "${ZIP_DIR}"
+fi
+
+# Check if dSym available
+if [ ! -d "$DSYM_PATH" ]; then
+    echo "Appsee - dSYM file not found on: ${DSYM_PATH}. Please contact support@appsee.com for assistance"
+    exit 1
+fi
+
+# Zip dSYM
+cd "${DWARF_DSYM_FOLDER_PATH}"
+/usr/bin/zip -D -r -q  "${ZIP_PATH}" "${DWARF_DSYM_FILE_NAME}"
+
+if [ $? -ne 0 ]; then
+    echo "Appsee - dSYM zip failed. Please contact support@appsee.com for assistance"
+    exit 1
+fi
+
+# Upload dSYM
+RES=$(curl "${API_URL}?APIKey=${APIKEY}" --write-out %{http_code} --silent --output /dev/null -F dsym=@"${ZIP_PATH}")
+if [ $RES -ne 200 ]; then
+    echo "Appsee - Upload failed with status $RES. Please contact support@appsee.com for assistance"
+    exit 1
+fi
+
+# Remove Zip file
+/bin/rm -f "${ZIP_PATH}"
+
+echo "Appsee - Debug symbols uploaded successfully"

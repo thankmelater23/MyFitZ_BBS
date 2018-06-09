@@ -16,8 +16,6 @@
 		41EAD01920CBC22300395B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD01720CBC22300395B6C /* LaunchScreen.storyboard */; };
 		41EAD02420CBC22400395B6C /* MyFitZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD02320CBC22400395B6C /* MyFitZTests.swift */; };
 		41EAD02F20CBC22400395B6C /* MyFitZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD02E20CBC22400395B6C /* MyFitZUITests.swift */; };
-		D9F5B5566204F7E5816DFD84 /* Pods_MyFitZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8EB1555E29C9702F7B357D /* Pods_MyFitZTests.framework */; };
-		DD86F255767515CA62F819FF /* Pods_MyFitZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E5C0F158A81E082E5B6099 /* Pods_MyFitZUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +54,7 @@
 		44C42F26D0C89D2DADB7EDDC /* Pods-MyFitZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZ/Pods-MyFitZ.debug.xcconfig"; sourceTree = "<group>"; };
 		48E5C0F158A81E082E5B6099 /* Pods_MyFitZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFitZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720144B95C16516E02CBB79A /* Pods-MyFitZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZ/Pods-MyFitZ.release.xcconfig"; sourceTree = "<group>"; };
-		8990DDB3C7BEBD57FA39F299 /* Pods-MyFitZUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZUITests/Pods-MyFitZUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B8EB1555E29C9702F7B357D /* Pods_MyFitZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFitZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1E815FCA5C16EA3C8F93F33 /* Pods-MyFitZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZUITests/Pods-MyFitZUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C3B4B5CD1D252F1C15C90543 /* Pods-MyFitZTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZTests/Pods-MyFitZTests.release.xcconfig"; sourceTree = "<group>"; };
-		D6FD5A8000C1E4E4AB14DEAA /* Pods-MyFitZTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZTests/Pods-MyFitZTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9F5B5566204F7E5816DFD84 /* Pods_MyFitZTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD86F255767515CA62F819FF /* Pods_MyFitZUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,10 +152,6 @@
 			children = (
 				44C42F26D0C89D2DADB7EDDC /* Pods-MyFitZ.debug.xcconfig */,
 				720144B95C16516E02CBB79A /* Pods-MyFitZ.release.xcconfig */,
-				D6FD5A8000C1E4E4AB14DEAA /* Pods-MyFitZTests.debug.xcconfig */,
-				C3B4B5CD1D252F1C15C90543 /* Pods-MyFitZTests.release.xcconfig */,
-				8990DDB3C7BEBD57FA39F299 /* Pods-MyFitZUITests.debug.xcconfig */,
-				A1E815FCA5C16EA3C8F93F33 /* Pods-MyFitZUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -179,6 +167,7 @@
 				41EAD00420CBC21A00395B6C /* Sources */,
 				41EAD00520CBC21A00395B6C /* Frameworks */,
 				41EAD00620CBC21A00395B6C /* Resources */,
+				20BCD416461693DB4BF352F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +182,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41EAD03620CBC22400395B6C /* Build configuration list for PBXNativeTarget "MyFitZTests" */;
 			buildPhases = (
-				4F80C8DCAAD8C3D23349B799 /* [CP] Check Pods Manifest.lock */,
 				41EAD01B20CBC22400395B6C /* Sources */,
 				41EAD01C20CBC22400395B6C /* Frameworks */,
 				41EAD01D20CBC22400395B6C /* Resources */,
@@ -212,7 +200,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41EAD03920CBC22400395B6C /* Build configuration list for PBXNativeTarget "MyFitZUITests" */;
 			buildPhases = (
-				3BB57BB22C51F81A2B7DDE5E /* [CP] Check Pods Manifest.lock */,
 				41EAD02620CBC22400395B6C /* Sources */,
 				41EAD02720CBC22400395B6C /* Frameworks */,
 				41EAD02820CBC22400395B6C /* Resources */,
@@ -298,22 +285,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3BB57BB22C51F81A2B7DDE5E /* [CP] Check Pods Manifest.lock */ = {
+		20BCD416461693DB4BF352F0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyFitZ/Pods-MyFitZ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
+				"${BUILT_PRODUCTS_DIR}/CRToast/CRToast.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HeapInspector/HeapInspector.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/REFormattedNumberField/REFormattedNumberField.framework",
+				"${BUILT_PRODUCTS_DIR}/RETableViewManager/RETableViewManager.framework",
+				"${BUILT_PRODUCTS_DIR}/REValidation/REValidation.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Siren/Siren.framework",
+				"${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/TSMessages/TSMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/iRate/iRate.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyFitZUITests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRToast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HeapInspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/REFormattedNumberField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RETableViewManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/REValidation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siren.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackTextViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iRate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFitZ/Pods-MyFitZ-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3CC7AD1930B2CE3CD2DA4A48 /* [CP] Check Pods Manifest.lock */ = {
@@ -328,24 +355,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MyFitZ-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F80C8DCAAD8C3D23349B799 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyFitZTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -564,7 +573,6 @@
 		};
 		41EAD03720CBC22400395B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6FD5A8000C1E4E4AB14DEAA /* Pods-MyFitZTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,7 +590,6 @@
 		};
 		41EAD03820CBC22400395B6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3B4B5CD1D252F1C15C90543 /* Pods-MyFitZTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,7 +607,6 @@
 		};
 		41EAD03A20CBC22400395B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8990DDB3C7BEBD57FA39F299 /* Pods-MyFitZUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,7 +623,6 @@
 		};
 		41EAD03B20CBC22400395B6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1E815FCA5C16EA3C8F93F33 /* Pods-MyFitZUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
