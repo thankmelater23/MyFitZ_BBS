@@ -10,12 +10,36 @@
 		1BCAD7D93D01E786AF17A772 /* Pods_MyFitZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0226A6153F49A736361A8DDD /* Pods_MyFitZ.framework */; };
 		41EAD00C20CBC21A00395B6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD00B20CBC21A00395B6C /* AppDelegate.swift */; };
 		41EAD00E20CBC21A00395B6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD00D20CBC21A00395B6C /* ViewController.swift */; };
-		41EAD01120CBC21B00395B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD00F20CBC21B00395B6C /* Main.storyboard */; };
 		41EAD01420CBC21B00395B6C /* MyFitZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD01220CBC21B00395B6C /* MyFitZ.xcdatamodeld */; };
-		41EAD01620CBC22300395B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD01520CBC22300395B6C /* Assets.xcassets */; };
-		41EAD01920CBC22300395B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD01720CBC22300395B6C /* LaunchScreen.storyboard */; };
 		41EAD02420CBC22400395B6C /* MyFitZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD02320CBC22400395B6C /* MyFitZTests.swift */; };
 		41EAD02F20CBC22400395B6C /* MyFitZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAD02E20CBC22400395B6C /* MyFitZUITests.swift */; };
+		41EAD03D20CBE44F00395B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD03C20CBE44F00395B6C /* Assets.xcassets */; };
+		41EAD05520CBE4C200395B6C /* wear0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD03E20CBE4AF00395B6C /* wear0.wav */; };
+		41EAD05620CBE4C200395B6C /* cellselect0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD03F20CBE4AF00395B6C /* cellselect0.wav */; };
+		41EAD05720CBE4C200395B6C /* wishlist0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04020CBE4B000395B6C /* wishlist0.wav */; };
+		41EAD05820CBE4C200395B6C /* alert0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04120CBE4B100395B6C /* alert0.wav */; };
+		41EAD05A20CBE4C200395B6C /* cellselect1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04320CBE4B200395B6C /* cellselect1.wav */; };
+		41EAD05B20CBE4C200395B6C /* CodeComplexity.sh in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04420CBE4B300395B6C /* CodeComplexity.sh */; };
+		41EAD05C20CBE4C200395B6C /* notification0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04520CBE4B500395B6C /* notification0.wav */; };
+		41EAD05D20CBE4C200395B6C /* notification1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04620CBE4B600395B6C /* notification1.wav */; };
+		41EAD05E20CBE4C200395B6C /* clear0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04720CBE4B700395B6C /* clear0.wav */; };
+		41EAD05F20CBE4C200395B6C /* add0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04820CBE4B700395B6C /* add0.wav */; };
+		41EAD06020CBE4C200395B6C /* back0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04920CBE4B800395B6C /* back0.wav */; };
+		41EAD06120CBE4C200395B6C /* edit0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04A20CBE4B900395B6C /* edit0.wav */; };
+		41EAD06220CBE4C200395B6C /* LinesOfCode.sh in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04B20CBE4BA00395B6C /* LinesOfCode.sh */; };
+		41EAD06320CBE4C200395B6C /* set_build_number.sh in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04C20CBE4BB00395B6C /* set_build_number.sh */; };
+		41EAD06420CBE4C200395B6C /* delete0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04D20CBE4BB00395B6C /* delete0.wav */; };
+		41EAD06520CBE4C200395B6C /* mycloset0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04E20CBE4BC00395B6C /* mycloset0.wav */; };
+		41EAD06620CBE4C200395B6C /* save0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD04F20CBE4BD00395B6C /* save0.wav */; };
+		41EAD06720CBE4C200395B6C /* update0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD05020CBE4BE00395B6C /* update0.wav */; };
+		41EAD06820CBE4C200395B6C /* animationPop0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD05120CBE4BF00395B6C /* animationPop0.wav */; };
+		41EAD06920CBE4C200395B6C /* mycloset1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD05220CBE4C000395B6C /* mycloset1.wav */; };
+		41EAD06A20CBE4C200395B6C /* wear1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD05320CBE4C100395B6C /* wear1.wav */; };
+		41EAD06B20CBE4C200395B6C /* got0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD05420CBE4C100395B6C /* got0.wav */; };
+		41EAD07020CBE4FD00395B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD06C20CBE4F800395B6C /* Main.storyboard */; };
+		41EAD07120CBE4FD00395B6C /* Features.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD06D20CBE4F900395B6C /* Features.storyboard */; };
+		41EAD07220CBE4FD00395B6C /* Options.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD06E20CBE4FA00395B6C /* Options.storyboard */; };
+		41EAD07320CBE4FD00395B6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EAD06F20CBE4FC00395B6C /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +64,7 @@
 		41EAD00820CBC21A00395B6C /* MyFitZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EAD00B20CBC21A00395B6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41EAD00D20CBC21A00395B6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41EAD01020CBC21B00395B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41EAD01320CBC21B00395B6C /* MyFitZ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFitZ.xcdatamodel; sourceTree = "<group>"; };
-		41EAD01520CBC22300395B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41EAD01820CBC22300395B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41EAD01A20CBC22300395B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EAD01F20CBC22400395B6C /* MyFitZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EAD02320CBC22400395B6C /* MyFitZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitZTests.swift; sourceTree = "<group>"; };
@@ -51,6 +72,33 @@
 		41EAD02A20CBC22400395B6C /* MyFitZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EAD02E20CBC22400395B6C /* MyFitZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitZUITests.swift; sourceTree = "<group>"; };
 		41EAD03020CBC22400395B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EAD03C20CBE44F00395B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41EAD03E20CBE4AF00395B6C /* wear0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wear0.wav; sourceTree = "<group>"; };
+		41EAD03F20CBE4AF00395B6C /* cellselect0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cellselect0.wav; sourceTree = "<group>"; };
+		41EAD04020CBE4B000395B6C /* wishlist0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wishlist0.wav; sourceTree = "<group>"; };
+		41EAD04120CBE4B100395B6C /* alert0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alert0.wav; sourceTree = "<group>"; };
+		41EAD04320CBE4B200395B6C /* cellselect1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cellselect1.wav; sourceTree = "<group>"; };
+		41EAD04420CBE4B300395B6C /* CodeComplexity.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = CodeComplexity.sh; sourceTree = "<group>"; };
+		41EAD04520CBE4B500395B6C /* notification0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification0.wav; sourceTree = "<group>"; };
+		41EAD04620CBE4B600395B6C /* notification1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification1.wav; sourceTree = "<group>"; };
+		41EAD04720CBE4B700395B6C /* clear0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clear0.wav; sourceTree = "<group>"; };
+		41EAD04820CBE4B700395B6C /* add0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = add0.wav; sourceTree = "<group>"; };
+		41EAD04920CBE4B800395B6C /* back0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = back0.wav; sourceTree = "<group>"; };
+		41EAD04A20CBE4B900395B6C /* edit0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = edit0.wav; sourceTree = "<group>"; };
+		41EAD04B20CBE4BA00395B6C /* LinesOfCode.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = LinesOfCode.sh; sourceTree = "<group>"; };
+		41EAD04C20CBE4BB00395B6C /* set_build_number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = set_build_number.sh; sourceTree = "<group>"; };
+		41EAD04D20CBE4BB00395B6C /* delete0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = delete0.wav; sourceTree = "<group>"; };
+		41EAD04E20CBE4BC00395B6C /* mycloset0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mycloset0.wav; sourceTree = "<group>"; };
+		41EAD04F20CBE4BD00395B6C /* save0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = save0.wav; sourceTree = "<group>"; };
+		41EAD05020CBE4BE00395B6C /* update0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = update0.wav; sourceTree = "<group>"; };
+		41EAD05120CBE4BF00395B6C /* animationPop0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = animationPop0.wav; sourceTree = "<group>"; };
+		41EAD05220CBE4C000395B6C /* mycloset1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mycloset1.wav; sourceTree = "<group>"; };
+		41EAD05320CBE4C100395B6C /* wear1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wear1.wav; sourceTree = "<group>"; };
+		41EAD05420CBE4C100395B6C /* got0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = got0.wav; sourceTree = "<group>"; };
+		41EAD06C20CBE4F800395B6C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		41EAD06D20CBE4F900395B6C /* Features.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Features.storyboard; sourceTree = "<group>"; };
+		41EAD06E20CBE4FA00395B6C /* Options.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Options.storyboard; sourceTree = "<group>"; };
+		41EAD06F20CBE4FC00395B6C /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		44C42F26D0C89D2DADB7EDDC /* Pods-MyFitZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZ/Pods-MyFitZ.debug.xcconfig"; sourceTree = "<group>"; };
 		48E5C0F158A81E082E5B6099 /* Pods_MyFitZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFitZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720144B95C16516E02CBB79A /* Pods-MyFitZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFitZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFitZ/Pods-MyFitZ.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,13 +156,14 @@
 		41EAD00A20CBC21A00395B6C /* MyFitZ */ = {
 			isa = PBXGroup;
 			children = (
+				41EAD07620CBE55A00395B6C /* Storyboard */,
 				41EAD00B20CBC21A00395B6C /* AppDelegate.swift */,
 				41EAD00D20CBC21A00395B6C /* ViewController.swift */,
-				41EAD00F20CBC21B00395B6C /* Main.storyboard */,
-				41EAD01520CBC22300395B6C /* Assets.xcassets */,
-				41EAD01720CBC22300395B6C /* LaunchScreen.storyboard */,
+				41EAD03C20CBE44F00395B6C /* Assets.xcassets */,
 				41EAD01A20CBC22300395B6C /* Info.plist */,
 				41EAD01220CBC21B00395B6C /* MyFitZ.xcdatamodeld */,
+				41EAD07420CBE51200395B6C /* SFX */,
+				41EAD07520CBE54600395B6C /* Scripts */,
 			);
 			path = MyFitZ;
 			sourceTree = "<group>";
@@ -135,6 +184,53 @@
 				41EAD03020CBC22400395B6C /* Info.plist */,
 			);
 			path = MyFitZUITests;
+			sourceTree = "<group>";
+		};
+		41EAD07420CBE51200395B6C /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD04820CBE4B700395B6C /* add0.wav */,
+				41EAD04120CBE4B100395B6C /* alert0.wav */,
+				41EAD05120CBE4BF00395B6C /* animationPop0.wav */,
+				41EAD04920CBE4B800395B6C /* back0.wav */,
+				41EAD03F20CBE4AF00395B6C /* cellselect0.wav */,
+				41EAD04320CBE4B200395B6C /* cellselect1.wav */,
+				41EAD04720CBE4B700395B6C /* clear0.wav */,
+				41EAD04D20CBE4BB00395B6C /* delete0.wav */,
+				41EAD04A20CBE4B900395B6C /* edit0.wav */,
+				41EAD05420CBE4C100395B6C /* got0.wav */,
+				41EAD04E20CBE4BC00395B6C /* mycloset0.wav */,
+				41EAD05220CBE4C000395B6C /* mycloset1.wav */,
+				41EAD04520CBE4B500395B6C /* notification0.wav */,
+				41EAD04620CBE4B600395B6C /* notification1.wav */,
+				41EAD04F20CBE4BD00395B6C /* save0.wav */,
+				41EAD05020CBE4BE00395B6C /* update0.wav */,
+				41EAD03E20CBE4AF00395B6C /* wear0.wav */,
+				41EAD05320CBE4C100395B6C /* wear1.wav */,
+				41EAD04020CBE4B000395B6C /* wishlist0.wav */,
+			);
+			path = SFX;
+			sourceTree = "<group>";
+		};
+		41EAD07520CBE54600395B6C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD04420CBE4B300395B6C /* CodeComplexity.sh */,
+				41EAD04B20CBE4BA00395B6C /* LinesOfCode.sh */,
+				41EAD04C20CBE4BB00395B6C /* set_build_number.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		41EAD07620CBE55A00395B6C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD06D20CBE4F900395B6C /* Features.storyboard */,
+				41EAD06F20CBE4FC00395B6C /* LaunchScreen.xib */,
+				41EAD06C20CBE4F800395B6C /* Main.storyboard */,
+				41EAD06E20CBE4FA00395B6C /* Options.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		C9C7AF2ED6FC58C9646D7793 /* Frameworks */ = {
@@ -262,9 +358,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EAD01920CBC22300395B6C /* LaunchScreen.storyboard in Resources */,
-				41EAD01620CBC22300395B6C /* Assets.xcassets in Resources */,
-				41EAD01120CBC21B00395B6C /* Main.storyboard in Resources */,
+				41EAD05520CBE4C200395B6C /* wear0.wav in Resources */,
+				41EAD07020CBE4FD00395B6C /* Main.storyboard in Resources */,
+				41EAD05D20CBE4C200395B6C /* notification1.wav in Resources */,
+				41EAD06620CBE4C200395B6C /* save0.wav in Resources */,
+				41EAD06420CBE4C200395B6C /* delete0.wav in Resources */,
+				41EAD05E20CBE4C200395B6C /* clear0.wav in Resources */,
+				41EAD05F20CBE4C200395B6C /* add0.wav in Resources */,
+				41EAD05720CBE4C200395B6C /* wishlist0.wav in Resources */,
+				41EAD05620CBE4C200395B6C /* cellselect0.wav in Resources */,
+				41EAD06920CBE4C200395B6C /* mycloset1.wav in Resources */,
+				41EAD03D20CBE44F00395B6C /* Assets.xcassets in Resources */,
+				41EAD06020CBE4C200395B6C /* back0.wav in Resources */,
+				41EAD06720CBE4C200395B6C /* update0.wav in Resources */,
+				41EAD06A20CBE4C200395B6C /* wear1.wav in Resources */,
+				41EAD06120CBE4C200395B6C /* edit0.wav in Resources */,
+				41EAD06520CBE4C200395B6C /* mycloset0.wav in Resources */,
+				41EAD05B20CBE4C200395B6C /* CodeComplexity.sh in Resources */,
+				41EAD06320CBE4C200395B6C /* set_build_number.sh in Resources */,
+				41EAD05C20CBE4C200395B6C /* notification0.wav in Resources */,
+				41EAD06820CBE4C200395B6C /* animationPop0.wav in Resources */,
+				41EAD06B20CBE4C200395B6C /* got0.wav in Resources */,
+				41EAD07220CBE4FD00395B6C /* Options.storyboard in Resources */,
+				41EAD06220CBE4C200395B6C /* LinesOfCode.sh in Resources */,
+				41EAD07320CBE4FD00395B6C /* LaunchScreen.xib in Resources */,
+				41EAD07120CBE4FD00395B6C /* Features.storyboard in Resources */,
+				41EAD05820CBE4C200395B6C /* alert0.wav in Resources */,
+				41EAD05A20CBE4C200395B6C /* cellselect1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,25 +525,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		41EAD00F20CBC21B00395B6C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41EAD01020CBC21B00395B6C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		41EAD01720CBC22300395B6C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41EAD01820CBC22300395B6C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		41EAD03120CBC22400395B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -545,7 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44XL6DX4WB;
+				DEVELOPMENT_TEAM = ZJWNZ643CG;
 				INFOPLIST_FILE = MyFitZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,7 +665,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44XL6DX4WB;
+				DEVELOPMENT_TEAM = ZJWNZ643CG;
 				INFOPLIST_FILE = MyFitZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
