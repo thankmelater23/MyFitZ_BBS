@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     var name:String = "David"
     
-    
+    var name1:String = "Alfonze"
 
   override func viewDidLoad() {
     super.viewDidLoad()
