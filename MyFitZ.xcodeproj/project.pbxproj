@@ -157,12 +157,11 @@
 			isa = PBXGroup;
 			children = (
 				41EAD07620CBE55A00395B6C /* Storyboard */,
-				41EAD00B20CBC21A00395B6C /* AppDelegate.swift */,
-				41EAD00D20CBC21A00395B6C /* ViewController.swift */,
-				41EAD03C20CBE44F00395B6C /* Assets.xcassets */,
+				41EAD07820CBF7BF00395B6C /* Support */,
+				41EAD07920CBF7CF00395B6C /* Controllers */,
+				41EAD07B20CBF7F500395B6C /* Media */,
 				41EAD01A20CBC22300395B6C /* Info.plist */,
-				41EAD01220CBC21B00395B6C /* MyFitZ.xcdatamodeld */,
-				41EAD07420CBE51200395B6C /* SFX */,
+				41EAD07A20CBF7E600395B6C /* Core Data */,
 				41EAD07520CBE54600395B6C /* Scripts */,
 			);
 			path = MyFitZ;
@@ -231,6 +230,39 @@
 				41EAD06E20CBE4FA00395B6C /* Options.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		41EAD07820CBF7BF00395B6C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD00B20CBC21A00395B6C /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		41EAD07920CBF7CF00395B6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD00D20CBC21A00395B6C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41EAD07A20CBF7E600395B6C /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD01220CBC21B00395B6C /* MyFitZ.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		41EAD07B20CBF7F500395B6C /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				41EAD03C20CBE44F00395B6C /* Assets.xcassets */,
+				41EAD07420CBE51200395B6C /* SFX */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		C9C7AF2ED6FC58C9646D7793 /* Frameworks */ = {
